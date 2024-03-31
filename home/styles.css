@@ -1,0 +1,253 @@
+#landing_img {
+    width: 100%;
+    margin-top: 80px;
+}
+
+#about_sec, #appreciation_sec {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5vh 10vw;
+    column-gap: 5vw;
+}
+
+#about_sec img, #appreciation_sec img {
+    max-width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+#about_sec div, #appreciation_sec div {
+    height: fit-content;
+    margin: auto;
+}
+
+#about_sec div h1 {
+    font-family: 'Inter';
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#about_sec div p, #appreciation_sec div p {
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2;
+    text-align: justify;
+}
+
+#about_sec div button {
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #1C377E;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+#about_sec div button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#clients_sec {
+    overflow-x: hidden;
+    margin: 5vh 0;
+}
+
+#clients_sec h1, #appreciation_sec_h1, #services_sec_h1{
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.slider {
+    height: 25vh;
+    position: relative;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slider::before,
+.slider::after {
+    position: absolute;
+    background-image:linear-gradient(to right,rgba(255, 255, 255, 1) 0%,rgba(255, 255, 255, 0) 100%);
+    content: '';
+    height: 25vh;
+    width: 25%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+/*  IMPORTANT CODE BELOW */
+.slide-track-1 {
+    width: auto;
+    height: 25vh;
+    display: flex;
+    animation: scroll1 30s linear infinite;
+    justify-content: space-between;
+}
+
+.slide-track-2 {
+    width: auto;
+    height: 25vh;
+    display: flex;
+    animation: scroll2 30s linear infinite;
+    justify-content: space-between;
+}
+
+.slide {
+    width: 15vw;
+    height: 25vh;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+    margin: 0 1vw;
+}
+
+.slide img {
+    max-width: 100%;
+    max-height: 80%;
+}
+
+@keyframes scroll1 {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(calc(-17vw * 15));
+    }
+}
+
+@keyframes scroll2 {
+    0% {
+        transform: translateX(calc(-17vw * 15));
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#services_sec {
+    /* width: 100vw;
+    height: auto; */
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-rows: auto auto;
+    padding: 20px 10vw;
+    column-gap: 10vw;
+    row-gap: 7vh;
+}
+
+.card {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: #dedede;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.25s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container h4{
+    margin: 5px auto;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.container p{
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px 0;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.container span{
+    text-align: center;
+}
+
+.container button{
+    font-size: 18px;
+    background-color: #1C377E;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin: 10px auto;
+}
+
+.mv_section{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto 10vw 30px;
+}
+
+.mv_section div {
+    width: 530px;
+    background-color: #dbdbdb;
+    border-radius: 10px;
+    border-width: 2px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: 0.25s;
+}
+
+.mv_section div:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    background-color: #1C377E;
+    color: #fff;
+}
+
+.mv_section div h4{
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.mv_section div p{
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.7;
+}

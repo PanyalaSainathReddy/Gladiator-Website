@@ -1,0 +1,42 @@
+.careers{
+    margin: 120px 10vw 20px;
+}
+
+.careers_content h1{
+    font-family: 'Inter';
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.careers_content p{
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2;
+    text-align: justify;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td{
+    font-family: 'Inter';
+    font-size: 18px;
+    border: 1px solid #00000070;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+thead{
+    background-color: #1C377E;
+    color: #fff;
+}
+
+thead th{
+    font-size: 24px;
+    font-weight: 600;
+    border: 1px solid #fff;
+}

@@ -1,0 +1,76 @@
+.contact_sec{
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+
+.contact_sec h1{
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.maps_div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.maps_div div{
+    width: 500px;
+}
+
+.maps_div div p{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: auto;
+    outline: 1px solid #00000070;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.contact_form h2{
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 30px;
+    font-weight: 600;
+    margin: 10px auto;
+}
+
+.contact_form input, .contact_form textarea{
+    margin: 10px auto;
+    height: 30px;
+    width: 460px !important;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-family: 'Inter';
+}
+
+.contact_form textarea{
+    height: 100px;
+    padding: 10px;
+}
+
+#submit_btn{
+    width: 100px !important;
+    height: 40px;
+    background-color: #1C377E;
+    color: #fff;
+    border-radius: 30px;
+    padding: auto 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#submit_btn:hover{
+    cursor: pointer;
+}

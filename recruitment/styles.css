@@ -1,0 +1,55 @@
+.heading_div {
+    grid-area: header;
+    margin: 0 2vw;
+}
+
+.recruitment_img {
+    grid-area: img;
+}
+
+.recruitment_places {
+    grid-area: places;
+}
+
+.recruitment_content {
+    display: grid;
+    grid-template-areas: 'header header header header header header'
+        'img img img places places places'
+        'img img img places places places';
+    grid-template-columns: repeat(6, 1fr);
+    width: 50vw;
+    margin: 120px auto 20px;
+}
+
+.recruitment_content img{
+    max-width: 100%;
+}
+
+.heading_div h1{
+    font-family: 'Inter';
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.heading_div h4{
+    font-family: 'Inter';
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.recruitment_content p{
+    font-family: 'Inter';
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 2vw;
+}
+
+.recruitment_content p b{
+    font-size: 24px;
+}
+
+.dot{
+    margin-right: 8px;
+}

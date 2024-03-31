@@ -45,9 +45,8 @@
     border-radius: 30px;
 }
 
-#about_sec div button a{
-    color: #fff;
-    text-decoration: none;
+#about_sec div button:hover {
+    cursor: pointer;
 }
 
 #clients_sec {
@@ -211,6 +210,10 @@
     padding: 10px 20px;
     border-radius: 30px;
     margin: 10px auto;
+}
+
+.container button:hover{
+    cursor: pointer;
 }
 
 .mv_section{

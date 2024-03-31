@@ -55,7 +55,6 @@
     border-radius: 30px;
 }
 
-.service div button a{
-    color: #fff;
-    text-decoration: none;
+.service div button:hover {
+    cursor: pointer;
 }

@@ -25,6 +25,10 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.gallery_img:hover {
+    cursor: pointer;
+}
+
 /* lightbox styling   */
 .lightbox {
     min-height: 90vh;
@@ -48,6 +52,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
+}
+
+.lightboxImg:hover {
+    cursor: pointer;
 }
 
 .close {

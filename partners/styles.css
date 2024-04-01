@@ -1,5 +1,5 @@
 .partners_sec{
-    margin: 120px 10vw 20px;
+    margin: 20px 10vw;
 }
 
 .partners_row{
@@ -25,11 +25,11 @@
     height: 100px;
     margin: auto;
     /* outline: 1px solid #0003; */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
 }
 
 .client_logo:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: 0.25s;
 }

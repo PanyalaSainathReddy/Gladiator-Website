@@ -1,6 +1,6 @@
 #landing_img {
     width: 100%;
-    margin-top: 80px;
+    margin-top: 0px;
 }
 
 #about_sec, #appreciation_sec {
@@ -253,4 +253,44 @@
     font-weight: 400;
     text-align: justify;
     line-height: 1.7;
+}
+
+@media screen and (max-width: 1100px){
+    #about_sec, #appreciation_sec {
+        grid-template-columns: 1fr;
+        margin: 5vh 5vw;
+    }
+
+    #about_sec h1 {
+        text-align: center;
+    }
+
+    #about_sec a{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #services_sec {
+        grid-template-columns: 35vw 35vw;
+    }
+
+    .mv_section{
+        flex-direction: column;
+    }
+
+    .mv_section div {
+        margin: 0 auto 50px;
+    }
+}
+
+@media screen and (max-width: 740px){
+    #services_sec {
+        grid-template-columns: 80vw;
+    }
+
+    .mv_section div {
+        width: 90%;
+    }
+    
 }

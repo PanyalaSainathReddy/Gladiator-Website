@@ -18,7 +18,7 @@
         'img img img places places places';
     grid-template-columns: repeat(6, 1fr);
     width: 50vw;
-    margin: 120px auto 20px;
+    margin: 20px auto;
 }
 
 .recruitment_content img{

@@ -1,7 +1,7 @@
 #about_sec {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 80px 10vw 0;
+    margin: 20px 10vw 0;
     column-gap: 5vw;
 }
 
@@ -78,4 +78,23 @@
     font-weight: 400;
     text-align: justify;
     line-height: 1.7;
+}
+
+@media screen and (max-width: 1100px) {
+    #about_sec{
+        grid-template-columns: 1fr;
+    }
+
+    #about_sec div h1, #about_sec div p, .about_text p{
+        text-align: center;
+    }
+
+    .mv_section{
+        flex-direction: column;
+    }
+
+    .mv_section div{
+        width: 80%;
+        margin-bottom: 50px;
+    }
 }

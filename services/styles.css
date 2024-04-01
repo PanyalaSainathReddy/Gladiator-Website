@@ -58,3 +58,24 @@
 .service div button:hover {
     cursor: pointer;
 }
+
+@media screen and (max-width: 1100px) {
+    .service{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+
+    .reverse{
+        order: -1;
+    }
+
+    .service div h1{
+        text-align: center;
+    }
+
+    .service div a{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+}

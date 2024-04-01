@@ -23,15 +23,19 @@
     margin: auto;
     outline: 1px solid #0003;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 
 .gallery_img:hover {
     cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    transition: 0.25s;
 }
 
 /* lightbox styling   */
 .lightbox {
-    min-height: 90vh;
+    height: 100vh;
     position: fixed;
     width: 100vw;
     background: rgba(255, 255, 255, 0.25);
@@ -51,6 +55,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 10px;
     position: absolute;
 }
 
@@ -71,4 +76,21 @@
 .close img {
     position: relative;
     width: 80%;
+}
+
+@media screen and (max-width: 1100px) {
+    .gallery_div div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .gallery_div div {
+        grid-template-columns: 1fr;
+        row-gap: 3vh;
+    }
+
+    .lightbox{
+        display: none !important;
+    }
 }

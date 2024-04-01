@@ -33,3 +33,22 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: 0.25s;
 }
+
+@media screen and (max-width: 1100px) {
+    .clients_imgs{
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 3vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .clients_imgs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 350px){
+    .clients_imgs{
+        grid-template-columns: 1fr;
+    }
+}

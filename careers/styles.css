@@ -40,3 +40,16 @@ thead th{
     font-weight: 600;
     border: 1px solid #fff;
 }
+
+@media screen and (max-width: 650px){
+    .careers{
+        margin: 20px 5vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .table-container{
+        width: 100%;
+        overflow-x: scroll;
+    }
+}

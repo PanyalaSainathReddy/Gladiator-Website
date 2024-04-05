@@ -32,11 +32,10 @@ nav {
     flex-direction: row;
 }
 
-.navbar-links p {
+.navbar-links p, .navbar-links div {
     font-family: 'Inter';
     font-weight: 500;
     margin: 0 15px;
-    /* Adjust spacing between links */
     cursor: pointer;
 }
 
@@ -46,18 +45,48 @@ nav {
 }
 
 .navbar-links p a:hover {
-    /* text-decoration: underline; */
     color: #1C377E;
 }
 
 .navbar-toggler {
     display: none;
-    /* Hide toggler by default on larger screens */
 }
 
 #nav_icon_code {
     scale: 2;
     margin: 8px 0;
+}
+
+.navbar-links div ul {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    list-style: none;
+    border-radius: 10px;
+}
+
+.navbar-links div:hover ul {
+    display: block;
+}
+
+.navbar-links div ul li:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.navbar-links div ul li a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    width: auto;
+    padding: 10px;
+}
+
+.navbar-links div ul li a:hover {
+    color: #1C377E;
 }
 
 footer{
@@ -230,9 +259,9 @@ footer span button a{
         border-radius: 0 0 15px 15px;
     }
 
-    .navbar-links p {
-        margin: 10px;
-        text-align: center;
+    .navbar-links p, .navbar-links div {
+        margin: 10px 10px 10px 3vw;
+        text-align: left;
     }
 
     .navbar-toggler {

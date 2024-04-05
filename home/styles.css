@@ -179,6 +179,10 @@
     border-radius: 10px 10px 0px 0px;
 }
 
+.card:last-child{
+  grid-column: 2;
+}
+
 .container{
     padding: 10px;
     display: flex;
@@ -223,11 +227,11 @@
 .mv_section{
     display: flex;
     justify-content: space-evenly;
-    margin: auto 10vw 30px;
+    margin: auto 2vw 30px;
 }
 
 .mv_section div {
-    width: 530px;
+    width: 25vw;
     background-color: #dbdbdb;
     border-radius: 10px;
     border-width: 2px;
@@ -304,11 +308,16 @@
         grid-template-columns: 35vw 35vw;
     }
 
+    .card:last-child{
+      grid-column: 1;
+    }
+
     .mv_section{
         flex-direction: column;
     }
 
     .mv_section div {
+      width: 60vw;
         margin: 0 auto 50px;
     }
 
@@ -389,4 +398,10 @@
       transform: translateX(0);
     }
   }
+}
+
+@media screen and (max-width: 300px) {
+    .mv_section div {
+        width: 80%;
+    }
 }

@@ -11,11 +11,20 @@
     grid-area: places;
 }
 
+.recruitment_contact{
+    grid-area: contact;
+}
+
+.recruitment_contact a{
+    text-decoration: none;
+}
+
 .recruitment_content {
     display: grid;
     grid-template-areas: 'header header header header header header'
         'img img img places places places'
-        'img img img places places places';
+        'img img img places places places'
+        'contact contact contact contact contact contact';
     grid-template-columns: repeat(6, 1fr);
     width: 50vw;
     margin: 20px auto 30px;
@@ -58,13 +67,14 @@
     .recruitment_content {
         grid-template-areas: 'header header header header header header'
             'img img img img img img'
-            'places places places places places places';
+            'places places places places places places'
+            'contact contact contact contact contact contact';
         grid-template-columns: repeat(6, 1fr);
         width: 80vw;
         margin: auto;
     }
 
-    .heading_div h1, .heading_div h4{
+    .heading_div h1, .heading_div h4, .recruitment_contact{
         text-align: center;
     }
 

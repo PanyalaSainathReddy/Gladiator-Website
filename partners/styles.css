@@ -16,8 +16,17 @@
 
 .clients_imgs{
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    column-gap: 3vw;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 5vw;
+    row-gap: 3vh;
+}
+
+.ports, .pharma, .retail{
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.ports img:first-child, .malls img:first-child, .pharma img:first-child{
+    grid-column: 2;
 }
 
 .client_logo{
@@ -39,6 +48,10 @@
         grid-template-columns: repeat(4, 1fr);
         row-gap: 5vw;
         column-gap: 5vw;
+    }
+
+    .ports img:first-child, .malls img:first-child, .pharma img:first-child{
+        grid-column: 1;
     }
 }
 

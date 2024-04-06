@@ -162,6 +162,10 @@ footer span button a{
     font-size: 16px;
 }
 
+.footer_detail img{
+    width: 50%;
+}
+
 .site_map{
     display: grid;
     grid-template-columns: auto auto;

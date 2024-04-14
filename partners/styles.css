@@ -21,12 +21,16 @@
     row-gap: 3vh;
 }
 
-.ports, .pharma, .retail{
+.ports, .retail{
     grid-template-columns: repeat(5, 1fr);
 }
 
 .ports img:first-child, .malls img:first-child, .pharma img:first-child{
     grid-column: 2;
+}
+
+.industrial img:nth-last-child(2){
+    grid-column: 3;
 }
 
 .client_logo{
@@ -50,14 +54,30 @@
         column-gap: 5vw;
     }
 
+    .ports{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .retail{
+        grid-template-columns: repeat(5, 1fr);
+    }
+
     .ports img:first-child, .malls img:first-child, .pharma img:first-child{
         grid-column: 1;
+    }
+
+    .industrial img:nth-last-child(2), .education img:nth-last-child(2){
+        grid-column: 2;
     }
 }
 
 @media screen and (max-width: 700px){
     .clients_imgs{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .industrial img:nth-last-child(2), .education img:nth-last-child(2){
+        grid-column: 1;
     }
 }
 
